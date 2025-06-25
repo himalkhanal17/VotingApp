@@ -1,7 +1,7 @@
 
 # Laravel Voting System
 
-A voting system built with Laravel where admins can create polls with answer alternatives and users can vote. At the end of the voting, all participants receive an email with the results.
+A voting system built with Laravel where admins can create polls with answer alternatives and users can vote. The voting link is sent to through email. At the end of the voting, all participants receive an email with the results.
 
 ---
 
