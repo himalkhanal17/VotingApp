@@ -1,3 +1,64 @@
+
+# Laravel Voting System
+
+A voting system built with Laravel where admins can create polls with answer alternatives and users can vote. At the end of the voting, all participants receive an email with the results.
+
+---
+
+## Features
+
+### Admin Panel
+- **Polls Management:**
+  - Create polls with multiple answer alternatives.
+  - Option for multiple answers per user.
+  - Poll end date/time
+  - Option for unique voters with email confirmation and a unique token (valid for 5 minutes).
+  - Activate/deactivate polls.
+  - Stop polls manually before deadline.
+  - View poll details, voting results, and list of voters.
+- **People Management:**
+  - List of all voters with email, last voting date, number of polls voted in, and which polls.
+
+### Website (User-facing)
+- List of all polls.
+- Poll detail pages with descriptions and voting capability.
+- Countdown timer if poll has an end date/time.
+- Real-time voting results display after vote without page reload.
+- Email verification for unique voter polls with time-limited tokens.
+
+---
+
+## Requirements
+
+- Laravel Framework
+- PHP >= 8.x
+- PostgreSQL database
+- Laravel Queue for asynchronous tasks (email sending)
+- Mail configuration set for SMTP (e.g., Gmail)
+- Basic frontend using Laravel Blade and minimal styling
+
+---
+
+
+
+## Installation
+
+composer install
+php artisan key:generate
+php artisan migrate
+php artisan serve
+
+
+
+
+
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
